@@ -10,6 +10,6 @@ podcasts.forEach(item => {
   xml += outline
 })
 
-xml += '</body></opml>\n'
+  xml += '</body></opml>\n'
 
-fs.writeFileSync('dist/opml.xml', xml)
+  fs.writeFileSync('dist/opml.xml', xml)
