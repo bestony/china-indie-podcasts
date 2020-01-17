@@ -1,17 +1,17 @@
-const marked = require('marked')
+const marked = require("marked");
 
 module.exports = {
-  root : [ './html/', './templates/' ],
-  options : {
-    autoescape : false,
-    trimBlocks : true,
-    lstripBlocks : true,
+  root: ["./html/", "./templates/"],
+  options: {
+    autoescape: false,
+    trimBlocks: true,
+    lstripBlocks: true
   },
-  filters : {
-    markdown : marked,
+  filters: {
+    markdown: marked
   },
-  data : {
-    env : process.env.NODE_ENV,
-    podcasts : require('./'),
-  },
-}
+  data: {
+    env: process.env.NODE_ENV,
+    podcasts: require("./")
+  }
+};
